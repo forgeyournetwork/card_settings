@@ -139,15 +139,15 @@ class CardSettingsField extends StatelessWidget
       // do nothing, these already have built in InputDecorations
     } else {
       // wrap in a decorator to show validation errors
-      final InputDecoration decoration = const InputDecoration()
-          .applyDefaults(Theme.of(context).inputDecorationTheme)
-          .copyWith(
-              errorText: errorText,
-              contentPadding: EdgeInsets.all(0.0),
-              isDense: true,
-              border: InputBorder.none);
+      // final InputDecoration decoration = const InputDecoration()
+      //     .applyDefaults(Theme.of(context).inputDecorationTheme)
+      //     .copyWith(
+      //         errorText: errorText,
+      //         contentPadding: EdgeInsets.all(0.0),
+      //         isDense: true,
+      //         border: InputBorder.none);
 
-      decoratedContent = InputDecorator(decoration: decoration, child: content);
+      // decoratedContent = InputDecorator(decoration: decoration, child: content);
     }
 
     return decoratedContent;
