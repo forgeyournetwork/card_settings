@@ -49,6 +49,7 @@ class CardSettingsDouble extends StatelessWidget
     this.showMaterialonIOS,
     this.locale,
     this.fieldPadding,
+    this.contentPadding = const EdgeInsets.all(0.0),
   });
 
   /// The text to identify the field to the user
@@ -162,6 +163,8 @@ class CardSettingsDouble extends StatelessWidget
   @override
   final EdgeInsetsGeometry? fieldPadding;
 
+  final EdgeInsetsGeometry contentPadding;
+
   @override
   Widget build(BuildContext context) {
     var myLocale = locale ?? Localizations.localeOf(context);
@@ -180,6 +183,7 @@ class CardSettingsDouble extends StatelessWidget
       hintText: hintText,
       showMaterialonIOS: showMaterialonIOS,
       fieldPadding: fieldPadding,
+      contentPadding: contentPadding,
       labelAlign: labelAlign,
       labelWidth: labelWidth,
       contentAlign: contentAlign,

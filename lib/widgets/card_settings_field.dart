@@ -107,7 +107,8 @@ class CardSettingsField extends StatelessWidget
                 _buildRightDecoration()
               ],
             ),
-            _buildNewRowContent(context)
+            _buildNewRowContent(context),
+            Divider(height: 1, thickness: 1),
           ],
         ),
       );

@@ -42,6 +42,7 @@ class CardSettingsInt extends CardSettingsText
     List<TextInputFormatter>? inputFormatters,
     bool? showMaterialonIOS,
     EdgeInsetsGeometry? fieldPadding,
+    EdgeInsetsGeometry contentPadding = const EdgeInsets.all(0.0),
   }) : super(
           key: key,
           label: label,
@@ -62,6 +63,7 @@ class CardSettingsInt extends CardSettingsText
           autocorrect: autocorrect,
           autovalidateMode: autovalidateMode,
           fieldPadding: fieldPadding,
+          contentPadding: contentPadding,
           validator: (value) {
             if (validator == null) return null;
             return validator(intelligentCast<int>(value));
