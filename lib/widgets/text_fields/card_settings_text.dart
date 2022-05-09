@@ -191,7 +191,7 @@ class _CardSettingsTextState extends FormFieldState<String> {
     if (widget.controller != oldWidget.controller ||
         widget.initialValue != oldWidget.initialValue) {
       oldWidget.controller?.removeListener(_handleControllerChanged);
-      _initController(oldWidget.controller?.value.toString());
+      _initController(widget.initialValue);
     }
   }
 
