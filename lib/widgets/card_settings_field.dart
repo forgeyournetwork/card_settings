@@ -108,6 +108,7 @@ class CardSettingsField extends StatelessWidget
               ],
             ),
             _buildNewRowContent(context),
+            const SizedBox(height: 4),
             Divider(height: 1, thickness: 1),
           ],
         ),

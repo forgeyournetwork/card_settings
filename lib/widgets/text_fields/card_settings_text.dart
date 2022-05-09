@@ -188,7 +188,8 @@ class _CardSettingsTextState extends FormFieldState<String> {
   @override
   void didUpdateWidget(CardSettingsText oldWidget) {
     super.didUpdateWidget(oldWidget);
-    if (widget.controller != oldWidget.controller) {
+    if (widget.controller != oldWidget.controller ||
+        widget.initialValue != oldWidget.initialValue) {
       oldWidget.controller?.removeListener(_handleControllerChanged);
       _initController(oldWidget.controller?.value.toString());
     }
