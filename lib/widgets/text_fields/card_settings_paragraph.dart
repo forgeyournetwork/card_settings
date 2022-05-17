@@ -44,6 +44,7 @@ class CardSettingsParagraph extends CardSettingsText
     List<TextInputFormatter>? inputFormatters,
     bool? showMaterialonIOS,
     EdgeInsetsGeometry? fieldPadding,
+    EdgeInsetsGeometry? contentPadding,
   }) : super(
           key: key,
           label: label,
@@ -52,6 +53,7 @@ class CardSettingsParagraph extends CardSettingsText
           contentAlign: contentAlign,
           showMaterialonIOS: showMaterialonIOS,
           fieldPadding: fieldPadding,
+          contentPadding: contentPadding = const EdgeInsets.all(0.0),
           initialValue: initialValue,
           contentOnNewLine: contentOnNewLine,
           maxLength: maxLength,
