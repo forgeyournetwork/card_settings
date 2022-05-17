@@ -53,7 +53,7 @@ class CardSettingsParagraph extends CardSettingsText
           contentAlign: contentAlign,
           showMaterialonIOS: showMaterialonIOS,
           fieldPadding: fieldPadding,
-          contentPadding: contentPadding = const EdgeInsets.all(0.0),
+          contentPadding: contentPadding ?? const EdgeInsets.all(0.0),
           initialValue: initialValue,
           contentOnNewLine: contentOnNewLine,
           maxLength: maxLength,
